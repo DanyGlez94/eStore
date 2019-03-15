@@ -62,6 +62,65 @@
       <div class="column large-3">
         <div class="callout">
           <h4>Búsqueda Avanzada</h4>
+          <form>
+            <div class="row">
+              <div class="column">
+                <label>Buscar por nombre:
+                  <input type="text">
+                </label>
+                <label>Buscar por referencia:
+                  <input type="text" aria-describedby="ayuda">
+                </label>
+                <p class="help-text" id="ayuda">Número único del producto</p>
+                <label>Por categoria:
+                  <select>
+                    <option value="1">Hogar</option>
+                    <option value="2">Salud</option>
+                    <option value="3">Deporte</option>
+                    <option value="4">Tecnología</option>
+                    <option value="5">Accesorios</option>
+                    <option value="6">Ropa</option>
+                    <option value="7">Mantenimiento</option>
+                  </select>
+                </label>
+                <div class="row">
+                  <div class="column">
+                    <fieldset>
+                      <legend>Tipo de producto: </legend>
+                      <input type="checkbox" id="Nuevo"><label for="Nuevo">Nuevo</label>
+                      <input type="checkbox" id="Usado"><label for="Usado">Usado</label>
+                    </fieldset>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="column">
+                    <fieldset>
+                      <legend>Tipo de precio: </legend>
+                      <input type="radio" name="tipo" value="Pleno" id="Pleno"><label for="Pleno">Pleno</label>
+                      <input type="radio" name="tipo" value="Oferta" id="Oferta"><label for="Oferta">En oferta</label>
+                    </fieldset>
+                  </div>
+                </div>
+                <div class="row column text-center">
+                  <label>¿Buscar productos agotados?</label>
+                  <div class="switch medium">
+                    <input class="switch-input" id="ejSwitch" type="checkbox" name="ejSwitch">
+                    <label class="switch-paddle" for="ejSwitch">
+                      <span class="switch-active" aria-hidden="true">Si</span>
+                      <span class="switch-inactive" aria-hidden="true">No</span>
+                    </label>
+                  </div>
+                </div>
+                <div class="row column text-center">
+                <hr>
+                  <i class="step fi-search"></i>
+                  <button type="submit" class="button">Buscar
+                    <i class="step fi-magnifying-glass"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
       <div class="column large-9">
